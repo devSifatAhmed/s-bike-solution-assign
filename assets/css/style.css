@@ -41,8 +41,6 @@ body {
 .about-title {
     position: relative;
     width: fit-content;
-    margin: 0 auto;
-
 }
 
 .about-title::after,
@@ -80,4 +78,41 @@ body {
     left: 0;
     background-color: #E15352;
 
+}
+
+.get-the-most-afford {
+    line-height: 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+}
+
+.get-the-most-afford::before,
+.get-the-most-afford::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    border-radius: 15px;
+    background: #E15352;
+}
+
+.get-the-most-afford::before {
+    top: 0;
+    left: 0;
+}
+
+.get-the-most-afford::after {
+    bottom: 0;
+    right: 0;
+}
+
+@media(max-width: 1000px) {
+
+    .about-title::after,
+    .about-title::before {
+        display: none;
+    }
 }
